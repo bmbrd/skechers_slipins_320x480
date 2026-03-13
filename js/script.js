@@ -21,8 +21,8 @@ buttons.forEach(btn => {
 // Back arrow
 const backArrow = document.getElementById('backArrow');
 backArrow.addEventListener('click', () => {
-  frame2.classList.remove('active');
-  frame1.classList.add('active');
+  // frame2.classList.remove('active');
+  // frame1.classList.add('active');
   location.reload();
 });
 
@@ -122,3 +122,20 @@ function morning(hours){
 	 }
 }
 
+
+const slides = document.querySelectorAll('.slide');
+let current = 0;
+
+function showNextSlide() {
+
+  slides[current].classList.remove('active');
+
+  current++;
+  if(current >= slides.length){
+    current = 0;
+  }
+
+  slides[current].classList.add('active');
+}
+
+setInterval(showNextSlide, 3000);

@@ -1,53 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>320x480 Ad</title>
-<link rel="stylesheet" href="css/styles.css"> </link>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>320x480 Ad</title>
+	<link rel="stylesheet" href="css/styles.css"> </link>
 </head>
 <body>
+	<!-- Frame 1 -->
+	<div class="frame active" id="frame1">
+		<div class="logo">
+	    	<img src="assets/slipins-logo.png" alt="Logo">
+	  	</div>
+		<div class="headline">
+			<h1 id="frame1Header">Headline Here</h1>
+			<!-- <p>Sub-headline here</p> -->
+		</div>
 
-<!-- Frame 1 -->
-<div class="frame active" id="frame1">
-  <div class="logo">
-    <img src="assets/logo.svg" alt="Logo">
-  </div>
-  <div class="headline">
-    <h1 id="frame1Header">Headline Here</h1>
-    <!-- <p>Sub-headline here</p> -->
-  </div>
-  <img src="assets/slipins.jpg" class="product-img" alt="Product">
-  <p class="sub-headline">JUST SLIP IN™ to pure comfort and convenience with Skechers Hands Free Slip-ins®.</p>
-  <div class="buttons">
-    <button data-btn="mens">Mens</button>
-    <button data-btn="womens">Womens</button>
-    <button data-btn="kids">Kids</button>
-  </div>
-  <!-- <div class="disclaimer">*Disclaimer text goes here.</div> -->
-</div>
+	  	<div class="slideshow-container">
+		  <img src="assets/slideshow/1.png" class="slide active">
+		  <img src="assets/slideshow/2.png" class="slide">
+		  <img src="assets/slideshow/3.png" class="slide">
+		</div>
 
-<!-- Frame 2 -->
-<div class="frame" id="frame2">
-  <div class="back-arrow" id="backArrow">&#8592;</div>
-  <div class="logo">
-    <img src="assets/logo.svg" alt="Logo">
-  </div>
-  <div class="frame2-header" id="frame2Header">Selected Option</div>
-  <img src="" id="displayImg" class="product-img" alt="Display Product">
-  <div class="thumbnail-container">
-    <img src="" class="thumb" >
-    <img src="" class="thumb" >
-    <a href="" id="viewMore" target="_blank"  style="display:flex; align-items:center; justify-content:center;color:#0070d2; text-decoration:none; font-size:12px; border-radius:4px;">
-      View More
-    </a>
-  </div>
-  <div class="buttons">
-    <button id="buyNow">Buy Now</button>
-  </div>
-</div>
+	  <p class="sub-headline">JUST SLIP IN™ to pure comfort and convenience with Skechers Hands Free Slip-ins®.</p>
+	  <div class="buttons">
+	    <button data-btn="mens">Mens</button>
+	    <button data-btn="womens">Womens</button>
+	    <button data-btn="kids">Kids</button>
+	  </div>
+	  <!-- <div class="disclaimer">*Disclaimer text goes here.</div> -->
+	</div>
 
-<script type="text/javascript" src="js/script.js"></script>
-
+	<!-- Frame 2 -->
+	<div class="frame" id="frame2">
+	  <div class="back-arrow" id="backArrow">&#8592;</div>
+	  <div class="logo">
+	    <img src="assets/slipins-logo.png" alt="Logo">
+	  </div>
+	  <div class="frame2-header" id="frame2Header">Selected Option</div>
+	  <img src="" id="displayImg" class="product-img" alt="Display Product">
+	  <div class="thumbnail-container">
+	    <img src="" class="thumb" >
+	    <img src="" class="thumb" >
+	    <a href="" id="viewMore" target="_blank">
+	      View More
+	    </a>
+	  </div>
+	  <div class="buttons">
+	    <button id="buyNow">Buy Now</button>
+	  </div>
+	</div>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
